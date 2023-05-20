@@ -105,7 +105,7 @@
   <header>
     <div class="banner">
       <h1 style="font-size: 14px; font-weight: bold;">Haealthy Hair, Happy You!</h1>
-      <div class="hamburger-menu" onclick="toggleMenu()">
+      <div class="hamburger-menu" id="hamburgerMenu" onclick="toggleMenu()">
         <div></div>
         <div></div>
         <div></div>
@@ -151,6 +151,12 @@
     function toggleMenu() {
       var menu = document.getElementById("menu");
       menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+
+    // Hide the hamburger menu on desktop sites
+    if (window.innerWidth > 480) {
+      var hamburgerMenu = document.getElementById("hamburgerMenu");
+      hamburgerMenu.style.display = "none";
     }
   </script>
 </body>
