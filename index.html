@@ -186,14 +186,28 @@
       font-size: 16px;
       line-height: 1.5;
     }
+
+    /* Updated styles for testimonials */
+    .testimonial-section {
+      text-align: center;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
     .testimonial-card {
       display: flex;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
       padding: 20px;
       border-radius: 8px;
       background-color: #f9f9f9;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      margin-bottom: 30px;
     }
 
     .testimonial-image {
@@ -201,8 +215,7 @@
       height: 120px;
       border-radius: 50%;
       overflow: hidden;
-      margin-right: 20px;
-      flex-shrink: 0; /* Prevent the image from shrinking */
+      margin-bottom: 20px;
     }
 
     .testimonial-image img {
@@ -212,7 +225,7 @@
     }
 
     .testimonial-info {
-      flex-grow: 1;
+      text-align: center;
     }
 
     .testimonial-name {
@@ -228,15 +241,17 @@
 
     /* Additional styles for responsive layout */
     @media (max-width: 768px) {
-      .testimonial-card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+      .testimonial-image {
+        margin-bottom: 10px;
       }
 
-      .testimonial-image {
-        margin-right: 0;
-        margin-bottom: 20px;
+      .testimonial-name {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+
+      .testimonial-feedback {
+        font-size: 14px;
       }
     }
   </style>
@@ -302,51 +317,55 @@
         </div>
       </div>
     </div>
-      <!-- Testimonials Section -->
+    <!-- Testimonials Section -->
   <div class="section testimonial-section">
     <h2 class="section-heading">Testimonials</h2>
-    <div class="testimonial-card">
-      <div class="testimonial-image">
-        <img src="Rahul_Kamat.jpg" alt="Testimonial 1">
-      </div>
-      <div class="testimonial-info">
-        <h3 class="testimonial-name">Rahul Kamat</h3>
-        <p class="testimonial-feedback">"Cocoayush onion hair oil has been a lifesaver for my hair fall problem. 
-                                        After trying several hair care products without success, I decided to give 
-                                        this product a try, and I am so glad that I did. The combination of organic 
-                                        coconut oil, onion extract and methi in this hair oil has worked wonders in 
-                                        reducing my hair fall and promoting new hair growth. The oil is lightweight 
-                                        and easy to apply, and it doesn't leave any greasy residue on my hair."</p>
-      </div>
-    </div>
-
-    <div class="testimonial-card">
-      <div class="testimonial-image">
-        <img src="Shalini_Sharma.jpg" alt="Testimonial 2">
-      </div>
-      <div class="testimonial-info">
-        <h3 class="testimonial-name">Shalini Sharma</h3>
-        <p class="testimonial-feedback">"What I love most about this product is that it is made with natural ingredients 
-                                        and is free from harsh chemicals and synthetic additives. I have noticed a significant 
-                                        improvement in the thickness and overall health of my hair. I highly recommend 
-                                        Cocoayush hibiscus hair oil to anyone looking to promote healthy hair growth and 
-                                        improve the overall health of their hair."</p>
-      </div>
-    </div>
-
-    <div class="testimonial-card">
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
         <div class="testimonial-image">
-          <img src="Zainab_Khan.jpg" alt="Testimonial 2">
+          <img src="Rahul_Kamat.jpg" alt="Testimonial 1">
+        </div>
+        <div class="testimonial-info">
+          <h3 class="testimonial-name">Rahul Kamat</h3>
+          <p class="testimonial-feedback">"Cocoayush onion hair oil has been a lifesaver for my hair fall problem. 
+                                          After trying several hair care products without success, I decided to give 
+                                          this product a try, and I am so glad that I did. The combination of organic 
+                                          coconut oil, onion extract and methi in this hair oil has worked wonders in 
+                                          reducing my hair fall and promoting new hair growth. The oil is lightweight 
+                                          and easy to apply, and it doesn't leave any greasy residue on my hair."</p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-image">
+          <img src="Shalini_Sharma.jpg" alt="Testimonial 2">
+        </div>
+        <div class="testimonial-info">
+          <h3 class="testimonial-name">Shalini Sharma</h3>
+          <p class="testimonial-feedback">"I have been using Cocoayush onion hair oil for the past few months, and 
+                                          it has made a significant difference in the texture and quality of my hair. 
+                                          The oil is enriched with natural ingredients and is free from harmful 
+                                          chemicals. It has helped me in improving the overall health of my hair. 
+                                          My hair feels much softer, smoother, and shinier after using this hair 
+                                          oil regularly. I would highly recommend Cocoayush onion hair oil to 
+                                          anyone looking for a natural and effective solution for their hair problems."</p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-image">
+          <img src="Zainab_Khan.jpg" alt="Testimonial 3">
         </div>
         <div class="testimonial-info">
           <h3 class="testimonial-name">Zainab Khan</h3>
           <p class="testimonial-feedback">"I have been using this oil on my little one during his daily massage routine. The oil 
-                                            is made with organic coconut and olive oils, which provide deep hydration and nourishment 
-                                            to the skin. It is gentle and non-greasy, making it easy to apply and absorb into the skin. 
-                                            I appreciate that this product is free from harmful chemicals and synthetic fragrances, ensuring 
-                                            that my baby's sensitive skin is not exposed to any potential irritants."</p>
+                                        is made with organic coconut and olive oils, which provide deep hydration and nourishment 
+                                        to the skin. It is gentle and non-greasy, making it easy to apply and absorb into the skin. 
+                                        I appreciate that this product is free from harmful chemicals and synthetic fragrances, ensuring 
+                                        that my baby's sensitive skin is not exposed to any potential irritants."</p>
         </div>
       </div>
+    </div>
   </div>
   </main>
 
