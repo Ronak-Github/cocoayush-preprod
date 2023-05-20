@@ -159,33 +159,36 @@
       background-color: rgb(219, 43, 43);
     }
 
-    /* Additional styles for video and text content */
-    .video-container {
+    .video-section {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
+      margin-top: 40px;
     }
 
     .video {
-      width: 50%;
+      flex: 1;
+      margin-right: 20px;
     }
 
-    .text-content {
-      width: 50%;
-      padding-left: 20px;
+    .video iframe {
+      width: 100%;
+      height: 100%;
     }
 
-    .text-content h2 {
+    .text-section {
+      flex: 1;
+    }
+
+    .text-section h2 {
       font-size: 24px;
       font-weight: bold;
       margin-bottom: 20px;
     }
 
-    .text-content p {
+    .text-section p {
       font-size: 16px;
-      line-height: 1.5;
+      margin-bottom: 20px;
     }
+
   </style>
 </head>
 <body>
@@ -211,15 +214,6 @@
   <main>
     <div class="section">
       <h2 class="section-heading">Our Products</h2>
-      <div class="video-container">
-        <div class="video">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/ElZfdU54Cp8" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="text-content">
-          <h2>Benefits of Cocoayush Hair Oil</h2>
-          <p>Beautiful, luscious hair is a desirable attribute that many people strive to achieve. While there are numerous hair care products available in the market, one natural ingredient stands out for its remarkable benefits: onion extract.</p>
-        </div>
-      </div>
       <div class="product-container">
         <div class="product-card">
           <img src="red_onion_hair_oil.jpg" alt="Red Onion Hair Oil">
@@ -238,6 +232,24 @@
         </div>
       </div>
     </div>
+        <!-- New video and text section -->
+        <div class="video-section">
+            <div class="video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/VSvnAaMNOpE" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="text-section">
+              <h2>Benefits of Onion Extract in Hair Oil</h2>
+              <p>Beautiful, luscious hair is a desirable attribute that many people strive to achieve. 
+                While there are numerous hair care products available in the market, one natural 
+                ingredient stands out for its remarkable benefits: onion extract. <br><br><br>
+                Surprisingly, this common kitchen staple has gained popularity for its 
+                effectiveness in promoting hair health. In this blog, we will explore the 
+                astonishing benefits of onion extract in hair oil and why it is a must-have 
+                addition to your hair care routine. <br><br><br>
+                Onion extract in hair oil can benefit hair by promoting hair growth, strengthening 
+                hair strands, and reducing hair breakage and thinning.</p>
+            </div>
+          </div>
   </main>
 
   <footer>
