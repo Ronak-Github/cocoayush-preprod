@@ -159,36 +159,33 @@
       background-color: rgb(219, 43, 43);
     }
 
-    .video-section {
+    /* Additional styles for video and text content */
+    .video-container {
       display: flex;
-      margin-top: 40px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
     }
 
     .video {
-      flex: 1;
-      margin-right: 20px;
+      width: 50%;
     }
 
-    .video iframe {
-      width: 100%;
-      height: 100%;
+    .text-content {
+      width: 50%;
+      padding-left: 20px;
     }
 
-    .text-section {
-      flex: 1;
-    }
-
-    .text-section h2 {
+    .text-content h2 {
       font-size: 24px;
       font-weight: bold;
       margin-bottom: 20px;
     }
 
-    .text-section p {
+    .text-content p {
       font-size: 16px;
-      margin-bottom: 20px;
+      line-height: 1.5;
     }
-
   </style>
 </head>
 <body>
@@ -214,6 +211,15 @@
   <main>
     <div class="section">
       <h2 class="section-heading">Our Products</h2>
+      <div class="video-container">
+        <div class="video">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/ElZfdU54Cp8" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="text-content">
+          <h2>Benefits of Cocoayush Hair Oil</h2>
+          <p>Beautiful, luscious hair is a desirable attribute that many people strive to achieve. While there are numerous hair care products available in the market, one natural ingredient stands out for its remarkable benefits: onion extract.</p>
+        </div>
+      </div>
       <div class="product-container">
         <div class="product-card">
           <img src="red_onion_hair_oil.jpg" alt="Red Onion Hair Oil">
@@ -221,33 +227,21 @@
           <a class="buy-now-btn" href="https://www.amazon.com/">Buy Now</a>
         </div>
         <div class="product-card">
-          <img src="hibiscus_hair_oil.jpg" alt="Hibiscus Hair Oil">
-          <h3>Hibiscus Hair Oil</h3>
-          <a class="buy-now-btn" href="https://www.amazon.com/">Buy Now</a>
-        </div>
-        <div class="product-card">
           <img src="coconut_hair_oil.jpg" alt="Coconut Hair Oil">
           <h3>Coconut Hair Oil</h3>
           <a class="buy-now-btn" href="https://www.amazon.com/">Buy Now</a>
         </div>
+        <div class="product-card">
+          <img src="hibiscus_hair_oil.jpg" alt="Hibiscus Hair Oil">
+          <h3>Hibiscus Hair Oil</h3>
+          <a class="buy-now-btn" href="https://www.amazon.com/">Buy Now</a>
+        </div>
       </div>
     </div>
-        <!-- New video and text section -->
-        <div class="video-section">
-            <div class="video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/VSvnAaMNOpE" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="text-section">
-              <h2>Benefits of Onion Extract in Hair Oil</h2>
-              <p>Beautiful, luscious hair is a desirable attribute that many people strive to achieve. 
-                While there are numerous hair care products available in the market, one natural 
-                ingredient stands out for its remarkable benefits: onion extract.</p>
-            </div>
-          </div>
   </main>
 
   <footer>
-    <p>&copy; 2023 Your Website. All rights reserved.</p>
+    <p>&copy; 2023 Cocoayush. All rights reserved.</p>
   </footer>
 </body>
 </html>
