@@ -254,6 +254,46 @@
         font-size: 14px;
       }
     }
+    /* Additional styles for footer section */
+    footer {
+  background-color: #f6e1e8;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.company-info {
+  text-align: left;
+}
+
+.company-logo {
+  width: 200px;
+  height: auto;
+}
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin: 0 10px;
+}
+
   </style>
 </head>
 <body>
@@ -370,7 +410,23 @@
   </main>
 
   <footer>
-    <p>&copy; 2023 COCOAYUSH. All rights reserved.</p>
+    <div class="footer-container">
+      <div class="footer-column">
+        <div class="company-info">
+          <img src="cocoayush_logo.jpg" alt="Your Company Logo" class="company-logo">
+          <p>602, Radha Kunj,<br>
+            Goshamahal, Nampalli<br>
+            Hyd 12, India</p>
+        </div>
+      </div>
+      <div class="footer-column">
+        <div class="logo-row">
+          <img src="GMP-Certified.jpg" alt="GMP Logo" class="logo">
+          <img src="ISO.png" alt="ISO Logo" class="logo">
+          <img src="indiamade.png" alt="Make in India Logo" class="logo">
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
